@@ -1,0 +1,30 @@
+/* Smooth falling hearts */
+@keyframes heartFall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+.animate-heartFall {
+  animation: heartFall linear infinite;
+}
+
+/* Smooth floating balloons */
+@keyframes balloonFloat {
+  0%, 100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-40px) translateX(10px) rotate(5deg);
+  }
+}
+.animate-balloonFloat {
+  animation: balloonFloat 6s ease-in-out infinite;
+}
