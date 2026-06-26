@@ -127,7 +127,14 @@ const GiftBoxComponent = ({ onNext }) => {
                   {/* Next Button*/}
                   <motion.button 
                   onClick={onNext}
-                  className="x-50 relative mt-12 px-10 py-4 text-xl hover:cursor-pointer font-semibold text-white bg-gradient-romantic"
+                  className="z-50 relative mt-20 px-10 py-4 text-xl hover:cursor-pointer font-semibold text-white bg-gradient-romantic rounded-full shadow-romantic hover:shadow-glow transform transition-all duration-300"
+                  initial={{y:50, opacity: 0}}
+          animate={{opacity: 1, y:0}}
+                    transition={{duration: 0.3, delay: 1}}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 0 30px hsl(var(--primry-glow)/0.6)"
+                  }}
                   >
                     Next Surprise 💕
                   </motion.button>
