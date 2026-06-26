@@ -77,7 +77,7 @@ const Index = () => {
                 transition={{ delay: 1, duration: 0.3 }}
                 whileHover={{ scale: 1.05, boxShadow: "0px 0px 30px hsl(var(--primary-glow)/0.6)" }}
               >
-                Start Surprise 🎁
+                Here is your Surprise Twinkle !! 🎁
               </motion.button>
             </div>
           ) : (
